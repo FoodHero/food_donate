@@ -1,0 +1,67 @@
+/*
+ * Custom css files here
+ *
+ *
+ *
+ */
+
+.card {
+    /***** Make height equal to width (http://stackoverflow.com/a/6615994) ****/
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    /**************************************************************************/
+    border-radius: 2px;
+    color: rgba(0,0,0, 0.87);
+    background: #fff;
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card .card-height-indicator {
+    margin-top: 100%;
+}
+.card .card-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.card .card-image {
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+}
+.card .card-image img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    pointer-events: none;
+}
+.card .card-image .card-image-headline {
+    position: absolute;
+    bottom: 16px;
+    left: 18px;
+    color: #fff;
+    font-size: 2em;
+}
+.card .card-body {
+    height: 30%;
+    padding: 18px;
+}
+.card .card-footer {
+    height: 10%;
+    padding: 18px;
+}
+.card .card-footer button,
+.card .card-footer a {
+    margin: 0 !important;
+    position: relative;
+    bottom: 25px;
+    width: auto;
+}
+.card .card-footer button:first-child,
+.card .card-footer a:first-child {
+    left: -15px;
+}

@@ -4,4 +4,4 @@
 'use strict';
 
 angular
-    .module('app', ['ngDialog', 'angularSpinner', 'angularMoment']);
+    .module('app', ['ngDialog', 'angularSpinner']);

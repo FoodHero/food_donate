@@ -16,3 +16,4 @@
 .bundle/
 .idea/vcs.xml
 db/food_donate_*
+.DS_Store

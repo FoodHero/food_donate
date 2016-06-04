@@ -12,7 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
-//= require angular.min.js
+//= require bootstrap-sprockets
+//= require angular.js
 //= require ngDialog.js
+//= require_tree .
 

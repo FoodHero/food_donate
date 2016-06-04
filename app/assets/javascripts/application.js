@@ -15,5 +15,4 @@
 //= require_tree .
 //= require angular.min.js
 //= require ngDialog.js
-//= require bootstrap.js
 

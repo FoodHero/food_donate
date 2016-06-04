@@ -13,4 +13,6 @@
 /tmp
 
 .idea/
+.bundle/
 .idea/vcs.xml
+db/food_donate_*

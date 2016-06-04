@@ -9,6 +9,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 gem 'bootstrap'
+gem 'factory_girl_rails'
 
 group :production do 
   gem 'pg', '~> 0.15'

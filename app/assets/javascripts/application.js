@@ -15,3 +15,5 @@
 //= require bootstrap-sprockets
 //= require_tree .
 //= require angular.min.js
+//= require ngDialog.js
+

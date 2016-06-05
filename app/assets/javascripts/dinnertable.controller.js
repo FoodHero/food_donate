@@ -1,5 +1,21 @@
 app.controller('DinnerTableController', ['$scope',
     function($scope){
+<<<<<<< HEAD
+    var self = this;
+        self.test = "This is a test";
+        self.donations = {
+            freebirds : {
+                opened: false
+            },
+            heb: {
+                opened: false
+            },
+            mobileLoaves: {
+                opened: false
+            },
+            unitedWay: {
+                opened: false
+=======
         var self = this;
         self.test = "This is a test";
         self.donations = {
@@ -18,6 +34,7 @@ app.controller('DinnerTableController', ['$scope',
             unitedWay: {
                 opened: false,
                 completed: false
+>>>>>>> origin/master
             }
         }
 
@@ -25,7 +42,15 @@ app.controller('DinnerTableController', ['$scope',
             donationModel.opened = !donationModel.opened;
         }
 
+<<<<<<< HEAD
+
+
+
+
+}]);
+=======
         self.completeDonation = function(donationModel){
             donationModel.completed = !donationModel.completed;
         }
     }]);
+>>>>>>> origin/master

@@ -1,5 +1,15 @@
-<% @donations.each do |donation| %>
-  Name: <%= donation.name %>
-  Description: <%= donation.description %>
-  <br />
-<% end %>
+<div class="donations">
+  <% @donations.each do |donation| %>
+    <div class="donation">
+      <div class="donationName"><%= donation.name %></div>
+      <br />
+      <div class="donationDescription"><%= donation.description %></div>
+      <br />
+      <div class="claimButton pull-right">claim</div>
+      <div>
+        <%= donation.created_at.strftime("%Y/%m/%d - %I:%M %p") %><br />
+        Distance to donor
+      </div>
+    </div>
+  <% end %>
+</div>

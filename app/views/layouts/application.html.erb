@@ -8,17 +8,10 @@
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body ng-app="app">
   <div>
     <%= render 'static_pages/nav' %>
-    <div class="row clearfix">
-      <%- unless notice.nil? %>
-      <div class="alert alert-success" role="alert"><%= notice %></div>
-      <% end -%>
-      <%- unless alert.nil? %>
-      <div class="alert alert-danger" role="alert"><%= alert %></div>
-      <% end -%>
-    </div>
     <%= yield %>
   </div>
 
@@ -43,9 +36,6 @@
     </div>
   </div>
 </div>
-
-
-
 
 </body>
 </html>

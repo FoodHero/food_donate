@@ -2,8 +2,21 @@
   margin-top: 50px;
 
   .donation {
-    background-color: #BBBBBB;
-    width: 350px;
+    background-color: #EAEAEA;
+    width: 400px;
+    padding: 12px 30px;
     margin: 10px;
+
+    .donationName {
+      font-size: 16px;
+    }
+    .claimButton {
+      background-color: #999999;
+      color: #F7F7F7;
+      display: inline-block;
+      padding: 7px 18px;
+      border-radius: 10%;
+      cursor: pointer;
+    }
   }
 }

@@ -5,7 +5,11 @@
       <br />
       <div class="donationDescription"><%= donation.description %></div>
       <br />
-      <%= donation.created_at %>
+      <div class="claimButton pull-right">claim</div>
+      <div>
+        <%= donation.created_at.strftime("%Y/%m/%d - %I:%M %p") %><br />
+        Distance to donor
+      </div>
     </div>
   <% end %>
 </div>

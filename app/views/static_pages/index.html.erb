@@ -4,7 +4,7 @@
     <br />
     <br />
     <br />
-    <ul class="list-unstyled text-center">
+    <ul class="list-unstyled text-center list-inline">
       <% if user_signed_in? %>
         <li>
           <%= button_to 'Log Out', destroy_user_session_path, method: :delete, class: "btn fh-btn" %>
@@ -12,8 +12,10 @@
      <% else %>
        <li>
          <%= button_to 'Sign up', "/users/sign_up", method: :get, class: "btn fh-btn" %>
-         <%= button_to 'Sign in', new_user_session_path, class: "btn fh-btn", style: "margin-left: 50px;" %>
        </li>
+          <li>
+          <%= button_to 'Sign in', new_user_session_path, class: "btn fh-btn", style: "margin-left: 50px;" %>
+          </li>
      <% end %>
     </ul>
   </div>
@@ -45,6 +47,11 @@
       <div class="panel-body">
         4 10-pound bags of tortilla chips available for pickup...
       </div>
+      <div class="pull-right" style="padding: 10px;">
+        <button class="btn fh-btn">
+          Request
+        </button>
+      </div>
     </div>
   </div>
   <div class="row fh-card">
@@ -55,6 +62,11 @@
       </div>
       <div class="panel-body">
         Canned soup, vegetables wanted to feed 20-30 people
+      </div>
+      <div class="pull-right" style="padding: 10px;">
+        <button class="btn fh-btn">
+          Request
+        </button>
       </div>
     </div>
   </div>
@@ -67,15 +79,29 @@
       <div class="panel-body">
         Water, sodas, juices wanted for summer camp of 50-75 kids
       </div>
+      <div class="pull-right" style="padding: 10px;">
+        <button class="btn fh-btn">
+          Request
+        </button>
+      </div>
     </div>
   </div>
 </div>
-<div class="row">
-  <div class="fh-signup">
+<div class="row fh-signup">
+  <div>
     <h2 class="text-center" style="padding-bottom: 40px; padding-top: 40px;">Our Mission</h2>
     <div class="text-center" style="padding-bottom: 30px;">
-      <p>Lorem Ipsum Ipsum</p>
-      <p>Lorem Ipsum Ipsum</p>
+      <p>
+        Food Heroes is an app connecting those who need food with those who are able to provide it. By using a simple,
+        mobile-friendly interface that connects organizations with volunteers and non-profits, we aim to reduce some of
+        the 20-45% of food waste in the U.S.
+      </p>
+      <p>
+        In 2014 about 15% of Americans were food insecure, according to Feeding America, given that such a large
+        percentage of food is wasted, we hope to be a part of the solution. With our app both donors and organizations
+        can create a login, then use web or mobile to see a list of donations or donation requests, and associated
+        ratings, location, and contact info.
+      </p>
     </div>
     <br />
     <ul class="list-unstyled text-center">

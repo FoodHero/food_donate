@@ -1,4 +1,0 @@
-class AddDonorNotesToDonations < ActiveRecord::Migration
-  def change
-  end
-end

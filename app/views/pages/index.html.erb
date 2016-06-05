@@ -1,7 +1,10 @@
-<div class="container">
+<div>
   <% @donations.each do |donation| %>
-    Name: <%= donation.name %>
-    Description: <%= donation.description %>
-    <br />
+    <div class="donation">
+      <div class="donationName"><%= donation.name %></div>
+      <br />
+      <div class="donationDescription"<%= donation.description %></div>
+      <br />
+    </div>
   <% end %>
 </div>

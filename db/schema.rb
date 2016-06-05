@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160604182252) do
+ActiveRecord::Schema.define(version: 20160605125928) do
 
   create_table "donations", force: :cascade do |t|
     t.integer  "donor_id"
@@ -23,22 +23,11 @@ ActiveRecord::Schema.define(version: 20160604182252) do
     t.text     "internal_notes"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+    t.string   "donor_notes"
   end
 
   add_index "donations", ["donee_id"], name: "index_donations_on_donee_id"
   add_index "donations", ["donor_id"], name: "index_donations_on_donor_id"
-
-  create_table "donees", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "donors", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -53,6 +42,7 @@ ActiveRecord::Schema.define(version: 20160604182252) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

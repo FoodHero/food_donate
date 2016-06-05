@@ -15,5 +15,8 @@
 //= require bootstrap-sprockets
 //= require angular.js
 //= require ngDialog.js
+//= require loadash.js
+//= require angular-simple-logger.js
+//= require ng-maps.js
 //= require_tree .
 

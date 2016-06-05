@@ -1,0 +1,26 @@
+body{
+    background-color: #f2f4f3 !important;
+}
+
+
+@media (min-width: 768px){
+    .section {
+        color: #ffffff;
+        min-height: 350px;
+        left: 0;
+        right: 0;
+        width: 100% !important;
+        padding-top: 100px;
+        background-color: indianred;
+        top: 50px;
+    }
+}
+
+.fh-card > .panel-default{
+    border-radius: 0;
+}
+
+.fh-card-heading{
+    background-color: transparent;
+    border-color: transparent;
+}

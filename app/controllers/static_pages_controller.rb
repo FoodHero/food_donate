@@ -1,5 +1,7 @@
 class StaticPagesController < ApplicationController
 
+  layout "demo_site"
+
   def index
   end
 

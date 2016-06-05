@@ -1,3 +1,29 @@
+<nav class="navbar navbar-inverse navbar-fixed-top fh-nav" role="navigation"  >
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <ul class="nav navbar-nav fh-nav-menu">
+      <li>
+        <a href="#">LOGO</a>
+      </li>
+    </ul>
+  </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav fh-nav-menu">
+      <li>
+        <a href="#">Dinner Table</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="/dinner_table">Sign in</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
 <div class="row">
   <div class="section">
     <h1 class="text-center">Fighting the Good Fight Against Hunger</h1>
@@ -5,18 +31,12 @@
     <br />
     <br />
     <ul class="list-unstyled text-center list-inline">
-      <% if user_signed_in? %>
-        <li>
-          <%= button_to 'Log Out', destroy_user_session_path, method: :delete, class: "btn fh-btn" %>
-        </li>
-     <% else %>
-       <li>
-         <%= button_to 'Sign up', "/users/sign_up", method: :get, class: "btn fh-btn" %>
+      <li>
+        <a href="#" class="btn fh-btn">Sign up</a>
        </li>
-          <li>
-          <%= button_to 'Sign in', new_user_session_path, class: "btn fh-btn", style: "margin-left: 50px;" %>
-          </li>
-     <% end %>
+      <li>
+        <a href="/dinner_table" class="btn fh-btn" style="margin-left: 50px">Sign in</a>
+      </li>
     </ul>
   </div>
   <div class="fh-sub-banner">

@@ -1,10 +1,11 @@
-<div>
+<div class="donations">
   <% @donations.each do |donation| %>
     <div class="donation">
       <div class="donationName"><%= donation.name %></div>
       <br />
-      <div class="donationDescription"<%= donation.description %></div>
+      <div class="donationDescription"><%= donation.description %></div>
       <br />
+      <%= donation.created_at %>
     </div>
   <% end %>
 </div>

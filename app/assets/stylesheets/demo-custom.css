@@ -2,6 +2,9 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+.fh-card-completed {
+    background-color: #DFF6FB !important;
+}
 /*Material Design Shadows*/
 
 .z-depth-0 {

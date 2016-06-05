@@ -4,14 +4,16 @@
     <br />
     <br />
     <ul class="list-unstyled text-center">
-      <li>
-        <button class="btn fh-btn">
-          Sign In
-        </button>
-        <button class="btn fh-btn" style="margin-left: 50px;">
-          Sign Up
-        </button>
-      </li>
+      <% if user_signed_in? %>
+        <li>
+          <%= button_to 'Log Out', destroy_user_session_path, method: :delete, class: "btn fh-btn" %>
+        </li>
+     <% else %>
+       <li>
+         <%= button_to 'Sign up', "/users/sign_up", method: :get, class: "btn fh-btn" %>
+         <%= button_to 'Sign in', new_user_session_path, class: "btn fh-btn", style: "margin-left: 50px;" %>
+       </li>
+     <% end %>
     </ul>
   </div>
 </div>

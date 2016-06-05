@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160604182252) do
+ActiveRecord::Schema.define(version: 20160605020010) do
 
   create_table "donations", force: :cascade do |t|
     t.integer  "donor_id"
@@ -20,9 +20,9 @@ ActiveRecord::Schema.define(version: 20160604182252) do
     t.text     "description"
     t.datetime "pick_up_by"
     t.string   "address"
-    t.text     "internal_notes"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.text     "donor_internal_note"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
   end
 
   add_index "donations", ["donee_id"], name: "index_donations_on_donee_id"

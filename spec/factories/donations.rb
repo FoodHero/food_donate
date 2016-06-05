@@ -1,7 +1,5 @@
 FactoryGirl.define do
   factory :donation do
-    donor
-    donee
     name "10 bags of rice"
     description "Really yummy brown rice!"
     pick_up_by { Date.current + 1.week }

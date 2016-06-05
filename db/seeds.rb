@@ -7,15 +7,15 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-donee_1 = FactoryGirl.create(:donee, name: "Austin Food Bank")
-donee_2 = FactoryGirl.create(:donee, name: "Mobile Loaves & Fishes")
-donee_3 = FactoryGirl.create(:donee, name: "Keep Austin Fed")
-donee_4 = FactoryGirl.create(:donee, name: "United Way for Greater Austin")
+donee_1 = FactoryGirl.create(:user, name: "Austin Food Bank",       email: "foodbank@test.com")
+donee_2 = FactoryGirl.create(:user, name: "Mobile Loaves & Fishes", email: "fishes@test.com")
+donee_3 = FactoryGirl.create(:user, name: "Keep Austin Fed",        email: "fed@test.com")
+donee_4 = FactoryGirl.create(:user, name: "United Way for Greater Austin", email: "great@test.com")
 
-donor_1 = FactoryGirl.create(:donor, name: "HEB")
-donor_2 = FactoryGirl.create(:donor, name: "Freebirds")
-donor_3 = FactoryGirl.create(:donor, name: "Mobile Loaves & Fishes")
-donor_4 = FactoryGirl.create(:donor, name: "Hopdoddy's")
+donor_1 = FactoryGirl.create(:user, name: "HEB",            email: "heb@test.com")
+donor_2 = FactoryGirl.create(:user, name: "Freebirds",      email: "free@test.com")
+donor_3 = FactoryGirl.create(:user, name: "Mobile Loaves & Fishes", email: "mobile@test.com")
+donor_4 = FactoryGirl.create(:user, name: "Hopdoddy's",     email: "hop@test.com")
 
 FactoryGirl.create(:donation, donor: donor_1, donee: donee_1, name: "50 Loaves of HEB Brand Bread", description: "We have 50 loaves of pre-packaged bread, of all varieties, available for pickup at the South Congress location. See profile for contact and pickup information.")
 FactoryGirl.create(:donation, donor: donor_2, donee: donee_2, name: "4 10-pound bags of tortilla chips", description: "We have some chips that we didn’t end up using, don’t expire for another few days, available for pickup anytime after 5PM at the South Congress location. See profile for more information.")

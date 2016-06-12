@@ -11,7 +11,7 @@ body {
     width: 100% !important;
     padding-top: 150px;
     top: 50px;
-    background-image: url('<%= asset_path("bg.jpg")%>');
+    background-image: url(image-path("bg.jpg"));
     background-size: cover;
     background-attachment: fixed;
     background-position: center;

@@ -1,5 +1,34 @@
+<div class="row">
+  <div class="section">
+    <h1 class="text-center">Fighting the Good Fight Against Hunger</h1>
+    <br />
+    <br />
+    <br />
+    <ul class="list-unstyled text-center list-inline">
+      <li>
+        <a href="#" class="btn fh-btn">Sign up</a>
+      </li>
+      <li>
+        <a href="/dinner_table" class="btn fh-btn" style="margin-left: 50px">Sign in</a>
+      </li>
+    </ul>
+  </div>
+  <h2 class="text-center">Dinner Table</h2>
+</div>
 <% @donations.each do |donation| %>
-  Name: <%= donation.name %>
-  Description: <%= donation.description %>
-  <br />
+  <div class="row fh-card">
+    <div class="panel panel-default">
+      <div class="panel-heading" style="background-color: white; border-color: white;">
+        <h3 class="panel-title"><%= donation.name %></h3>
+      </div>
+      <div class="panel-body">
+        <%= donation.description %>
+      </div>
+      <div class="pull-right" style="padding: 10px;">
+        <button class="btn fh-btn">
+          Request
+        </button>
+      </div>
+    </div>
+  </div>
 <% end %>

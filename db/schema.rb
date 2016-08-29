@@ -20,9 +20,9 @@ ActiveRecord::Schema.define(version: 20160605125928) do
     t.text     "description"
     t.datetime "pick_up_by"
     t.string   "address"
-    t.text     "internal_notes"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.text     "donor_internal_note"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
     t.string   "donor_notes"
   end
 
